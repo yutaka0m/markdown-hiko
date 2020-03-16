@@ -1,7 +1,7 @@
-.idea
 *.egg-info/
-private/
-dist/
-build/
 .DS_Store
+.idea
 __pycache__/
+build/
+dist/
+private/
