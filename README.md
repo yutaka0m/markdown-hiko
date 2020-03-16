@@ -40,3 +40,7 @@ markdown-hiko \
 | --url | S3のドメイン名 |
 | --bucket | S3のバケット名 |
 | --root  | (option) 画像のファイルパスが、プロジェクトルートからのパスとなっている場合は、プロジェクトルートのパスを指定する |
+
+## Develop
+
+- GitHubでリリースを作成すると、自動的にPyPIにアップロードされます（setup.pyのVERSIONを上げることを忘れずに）
