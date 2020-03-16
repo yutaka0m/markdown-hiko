@@ -1,4 +1,4 @@
-# Upload Markdown image to S3
+# Markdown-hiko
 
 Markdownに記述してあるローカルファイルを、s3にアップロードし、MarkdownのURLも書き換えます。
 
