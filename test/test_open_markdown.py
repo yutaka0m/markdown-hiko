@@ -1,6 +1,7 @@
 from unittest import TestCase
 
 from src.service.markdown_file_service import MarkdownFileService
+from src.model.file_path import FilePath
 
 
 class TestOpenMarkDown(TestCase):
@@ -10,12 +11,12 @@ class TestOpenMarkDown(TestCase):
         ![](./image/file/path)
         ![test](./image/file/path)""".replace(" ", "")
 
-        markdown_file_service = MarkdownFileService("./test.md")
+        markdown_file_service = MarkdownFileService(FilePath("./test/test.md"))
 
         opened_markdown = markdown_file_service.open_markdown()
         self.assertEqual(opened_markdown, markdown)
 
     def test_not_found(self):
         with self.assertRaises(FileNotFoundError):
-            markdown_file_service = MarkdownFileService("./not_found_file.md")
+            markdown_file_service = MarkdownFileService(FilePath("./test/not_found_file.md"))
             markdown_file_service.open_markdown()
