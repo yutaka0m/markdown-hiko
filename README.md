@@ -22,8 +22,10 @@ Markdown内に、次のような文章があった場合、
 ## Install
 
 ```bash
-pip install markdown-hiko
+pip install --user markdown-hiko 
 ```
+
+※(`$HOME/.local/bin` にパスを通してください)
 
 ## Basic Usage
 
