@@ -18,6 +18,12 @@ Markdown内に、次のような文章があった場合、
 ![](https://static.s3image.com/test.jpg)
 ```
 
+## Install
+
+```bash
+pip install markdown-hiko
+```
+
 ## Basic Usage
 
 ```bash
