@@ -12,6 +12,9 @@ VERSION = '0.2.0'
 
 URL = 'https://github.com/yutaka0m/markdown-hiko'
 
+with open('requirements.txt') as f:
+    REQUIRED = f.read().splitlines()
+
 setup(
     name='markdown-hiko',
     version=VERSION,
@@ -28,7 +31,7 @@ setup(
         'console_scripts':
             'markdown-hiko = src.cli:main'
     },
-    install_requires=['boto3', 'botocore'],
+    install_requires=REQUIRED,
 
     classifiers=[
         'Programming Language :: Python :: 3.7',
