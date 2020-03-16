@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 LONG_DESCRIPTION = """
-[Mardown Hiko] i a cli that uploads Markdown images to AWS S3.
+[Mardown Hiko] is a cli that uploads Markdown images to AWS S3.
 """.strip()
 
 SHORT_DESCRIPTION = """
-[Mardown Hiko] i a cli that uploads Markdown images to AWS S3.
+[Mardown Hiko] is a cli that uploads Markdown images to AWS S3.
 """.strip()
 
-VERSION = '0.2.0'
+VERSION = '0.2.1'
 
 URL = 'https://github.com/yutaka0m/markdown-hiko'
 
