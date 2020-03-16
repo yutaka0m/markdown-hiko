@@ -1,4 +1,5 @@
-# Markdown-hiko
+# Markdown-hiko ![](https://github.com/yutaka0m/markdown-hiko/workflows/Python%20CI/badge.svg?branch=master)
+
 
 Markdownに記述してあるローカルファイルを、s3にアップロードし、MarkdownのURLも書き換えます。
 
