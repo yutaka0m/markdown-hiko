@@ -1,12 +1,12 @@
 import argparse
 import os
 
+from src.model.directory_path import DirectoryPath
+from src.model.file_path import FilePath
 from src.service.image_path_service import ImagePathService
 from src.service.markdown_file_service import MarkdownFileService
 from src.service.markdown_text_service import MarkdownTextService
 from src.service.s3_service import S3Service
-from src.model.file_path import FilePath
-from src.model.directory_path import DirectoryPath
 
 
 def main():

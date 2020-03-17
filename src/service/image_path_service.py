@@ -1,7 +1,7 @@
 import os
 
-from src.model.file_path import FilePath
 from src.model.directory_path import DirectoryPath
+from src.model.file_path import FilePath
 
 
 class ImagePathService:

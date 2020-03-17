@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from src.service.markdown_file_service import MarkdownFileService
 from src.model.file_path import FilePath
+from src.service.markdown_file_service import MarkdownFileService
 
 
 class TestOpenMarkDown(TestCase):
