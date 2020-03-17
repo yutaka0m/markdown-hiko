@@ -28,3 +28,18 @@ jobs:
       run: |
         pip install pytest
         pytest
+
+    - name: Test with black
+      run: |
+        pip install black
+        black --check .
+
+    - name: Test with flake8
+      run: |
+        pip install flake8
+        flake8 . --statistics --count --show-source
+
+    - name: Test with isort
+      run: |
+        pip install isort
+        isort -c
