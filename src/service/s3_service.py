@@ -26,7 +26,7 @@ class S3Service:
         # Upload the file
         s3_client = boto3.client("s3")
         try:
-            response = s3_client.upload_file(file_path.value, self.bucket, object_name)
+            s3_client.upload_file(file_path.value, self.bucket, object_name)
         except ClientError as e:
             logging.error(e)
             return False
