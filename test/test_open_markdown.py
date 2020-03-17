@@ -9,7 +9,9 @@ class TestOpenMarkDown(TestCase):
         markdown = """\
         ![](./image/file/path)
         ![](./image/file/path)
-        ![test](./image/file/path)""".replace(" ", "")
+        ![test](./image/file/path)""".replace(
+            " ", ""
+        )
 
         markdown_file_service = MarkdownFileService(FilePath("./test/test.md"))
 

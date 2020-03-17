@@ -6,9 +6,8 @@ from src.model.directory_path import DirectoryPath
 
 class ImagePathService:
     def __init__(
-            self, image_path: FilePath,
-            project_root_path: DirectoryPath,
-            markdown_file_directory_path: DirectoryPath):
+        self, image_path: FilePath, project_root_path: DirectoryPath, markdown_file_directory_path: DirectoryPath
+    ):
         self.__image_path = image_path
         self.__project_root_path = project_root_path
         self.__markdown_file_directory_path = markdown_file_directory_path

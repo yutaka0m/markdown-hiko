@@ -37,7 +37,7 @@ def main():
         image_path_service = ImagePathService(
             image_path=file,
             project_root_path=project_root_absolute_path,
-            markdown_file_directory_path=markdown_file_directory_path
+            markdown_file_directory_path=markdown_file_directory_path,
         )
         s3_service.upload_file(image_path_service.get_absolute_path())
 
@@ -46,5 +46,5 @@ def main():
     markdown_file_service.save_markdown(replaced_string)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
