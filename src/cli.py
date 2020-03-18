@@ -10,6 +10,8 @@ from src.service.s3_service import S3Service
 
 
 def main():
+    """ markdown-hiko
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument("--file", "-f", help="path to Markdown file", required=True)
     parser.add_argument("--url", "-u", help="S2 or CloudFront domain name", required=True)

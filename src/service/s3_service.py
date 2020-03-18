@@ -8,6 +8,11 @@ from src.model.file_path import FilePath
 
 
 class S3Service:
+    """
+    Service class of operates S3
+    :param bucket: S3 bucket name
+    """
+
     def __init__(self, bucket: str):
         # Check environment value
         if os.getenv("AWS_ACCESS_KEY_ID") is None:
@@ -18,10 +23,16 @@ class S3Service:
             raise Exception("Please set AWS_DEFAULT_REGION")
         self.bucket = bucket
 
-    def upload_file(self, file_path: FilePath, object_name=None):
+    def upload_file(self, file_path: FilePath, object_name=None) -> bool:
+        """ Upload file to AWS S3
+
+        :param file_path File path to upload to S3
+        :param object_name　Name of file to save in S3
+        :return True if upload is success
+        """
         # If S3 object_name was not specified, use file_name
         if object_name is None:
-            object_name = file_path.get_base_name()
+            object_name = file_path.get_file_name()
 
         # Upload the file
         s3_client = boto3.client("s3")
