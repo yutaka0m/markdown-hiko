@@ -1,6 +1,5 @@
 # Markdown-hiko ![](https://github.com/yutaka0m/markdown-hiko/workflows/Python%20CI/badge.svg?branch=master)
 
-
 Markdownに記述してあるローカルファイルを、s3にアップロードし、MarkdownのURLも書き換えます。
 
 Markdown内に、次のような文章があった場合、
@@ -18,6 +17,10 @@ Markdown内に、次のような文章があった場合、
 # Testです。
 ![](https://static.s3image.com/test.jpg)
 ```
+
+ブログで詳しく使い方を紹介しています。 
+
+[Markdownに記述したローカル画像を自動でアップロードするCLI Markdown-hikoの使い方](https://tech.yutaka0m.com/entry/2020/03/18/195634/)
 
 ## Install
 
