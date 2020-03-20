@@ -12,7 +12,6 @@ class DirectoryPath:
     @property
     def value(self) -> str:
         """Custom getter
-
         :return: If the path ends with "/", trim "/"
         """
         if self.__value.endswith("/"):

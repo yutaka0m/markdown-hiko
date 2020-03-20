@@ -8,8 +8,7 @@ from src.model.file_path import FilePath
 
 
 class S3Service:
-    """
-    Service class of operates S3
+    """Service class of operates S3
     :param bucket: S3 bucket name
     """
 
