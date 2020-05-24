@@ -10,11 +10,10 @@ from src.service.s3_service import S3Service
 
 
 def main():
-    """ markdown-hiko
-    """
+    """markdown-hiko"""
     parser = argparse.ArgumentParser()
-    parser.add_argument("--file", "-f", help="path to Markdown file", required=True)
-    parser.add_argument("--url", "-u", help="S2 or CloudFront domain name", required=True)
+    parser.add_argument("--file", "-f", help="Path to Markdown file", required=True)
+    parser.add_argument("--url", "-u", help="S3 or CloudFront domain name", required=True)
     parser.add_argument("--bucket", "-b", help="S3 bucket name", required=True)
     parser.add_argument("--root", "-r", help="Project root path", default="", required=False)
     args = parser.parse_args()
@@ -31,7 +30,7 @@ def main():
         markdown_string: str = markdown_file_service.open_markdown()
         markdown_text_service: MarkdownTextService = MarkdownTextService(markdown_string)
     except FileNotFoundError:
-        raise Exception("Markdown file is not fount")
+        raise Exception("Markdown file is not found")
 
     # Upload to S3
     s3_service = S3Service(bucket)
