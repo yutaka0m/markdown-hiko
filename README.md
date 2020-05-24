@@ -23,7 +23,7 @@ Markdown内に、次のような文章があった場合、
 
 ブログで詳しく使い方を紹介しています。 
 
-[Markdownに記述したローカル画像を自動でアップロードするCLI Markdown-hikoの使い方](https://tech.yutaka0m.com/entry/2020/03/18/195634/)
+[Markdownに記述したローカル画像を自動でアップロードするCLI Markdown-hikoの使い方](https://tech.yutaka0m.com/entry/2020/03/18/161/)
 
 ## Install
 
