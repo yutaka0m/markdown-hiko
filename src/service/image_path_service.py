@@ -5,8 +5,7 @@ from src.model.file_path import FilePath
 
 
 class ImagePathService:
-    """Service class of image path
-    """
+    """Service class of image path"""
 
     def __init__(
         self, image_path: FilePath, project_root_path: DirectoryPath, markdown_file_directory_path: DirectoryPath

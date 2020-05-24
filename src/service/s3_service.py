@@ -24,7 +24,6 @@ class S3Service:
 
     def upload_file(self, file_path: FilePath, object_name=None) -> bool:
         """ Upload file to AWS S3
-
         :param file_path File path to upload to S3
         :param object_name　Name of file to save in S3
         :return True if upload is success

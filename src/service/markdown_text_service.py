@@ -6,8 +6,7 @@ from src.model.file_path import FilePath
 
 
 class MarkdownTextService:
-    """Service class of Markdown text
-    """
+    """Service class of Markdown text """
 
     def __init__(self, markdown_text: str):
         self.markdown_text: str = markdown_text
